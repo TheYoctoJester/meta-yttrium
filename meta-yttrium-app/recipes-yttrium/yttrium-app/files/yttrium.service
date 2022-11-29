@@ -1,0 +1,8 @@
+[Unit]
+Description=Yttrium demo application
+
+[Service]
+ExecStart=@BINDIR@/yttrium.sh
+
+[Install]
+WantedBy=multi-user.target

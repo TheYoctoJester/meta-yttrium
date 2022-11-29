@@ -23,9 +23,9 @@ do_install() {
     install -d ${D}${bindir}
     install -m 0755 ${WORKDIR}/yttrium.sh ${D}${bindir}
 	sed -i -e 's,development,${YVERSION},g' \
-		-e 's,@LED1@,${YLED1},g' \
-		-e 's,@LED2@,${YLED2},g' \
-		-e 's,@LED3@,${YLED3},g' \
+		-e 's,@YLED1@,${YLED1},g' \
+		-e 's,@YLED2@,${YLED2},g' \
+		-e 's,@YLED3@,${YLED3},g' \
 		${D}${bindir}/yttrium.sh
 
 	# deal with systemd unit files
